@@ -213,7 +213,7 @@ if __name__ == '__main__':
     [s.replace('.','-') for s in prev_tickers]
     sp500 = df['ticker'].unique()
     sp500 = [s.replace('.','-') for s in sp500]
-    ticker_list = [s for s in sp500 if s not in prev_tickers][41:]
+    ticker_list = [s for s in sp500 if s not in prev_tickers][204:]
 
     # download alpha vantage data into folders
     alpha_key = 'ITJ7WH0CRTXEJA4P'

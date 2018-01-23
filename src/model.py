@@ -156,6 +156,31 @@ def roc(probabilities, labels):
 
     return tprs, fprs, thresholds.tolist()
 
+def accuracy_curve(probabilities, labels):
+    positive_probs = probabilities[:, 1]
+    thresholds = np.sort(positive_probs)
+    accuracy_rate, inaccuracy_rate = [], []
+
+    # num_positive_cases = sum(labels)
+    # num_negative_cases = len(labels) - num_positive_cases
+
+    for threshold in thresholds:
+        # With this threshold, give the prediction of each instance
+        predictions = [0 if p < threshold else 1 for p in positive_probs]
+
+        # Calculate the number of correctly predicted cases
+        acc = accuracy_score(labels, predictions)
+        accuracy_rate.append(acc)
+        inaccuracy_rate.append(1 - acc)
+
+    plt.plot(thresholds, accuracy_rate)
+    plt.xlabel("Probabilities")
+    plt.ylabel("Accuracy Rate")
+    # plt.savefig('accuracy_curve.png')
+    plt.show()
+    plt.close()
+
+
 def profit_curve(profits, probabilities, labels):
     prob_delta = abs(probabilities[:, 0] - probabilities[:, 1])
     prob_delta_index = np.argsort(prob_delta)[::-1]
