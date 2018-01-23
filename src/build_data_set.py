@@ -216,7 +216,7 @@ if __name__ == '__main__':
     ticker_list = [s for s in sp500 if s not in prev_tickers][204:]
 
     # download alpha vantage data into folders
-    alpha_key = 'ITJ7WH0CRTXEJA4P'
+    alpha_key = ''#get key from alpha vantage 
     get_alpha(ticker_list, alpha_key)
 
     # for loop to get moving std feature
