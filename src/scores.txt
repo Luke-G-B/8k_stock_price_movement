@@ -1,0 +1,114 @@
+### 20 day RSI, CCI, moving_std, OBV, 8-K ###
+## toy_dataset 2 ##
+
+NLP alone:
+precision: 0.551063829787234
+recall: 0.4427350427350427
+accuracy: 0.5179533213644524
+non-NLP: for Ada 0.58078994614
+combined score for Ada:
+precision: 0.5902140672782875
+recall: 0.6598290598290598
+accuracy: 0.5807899461400359
+non-NLP: for Bagging 0.60592459605
+combined score for Bagging:
+precision: 0.6113138686131386
+recall: 0.5726495726495726
+accuracy: 0.5843806104129264
+non-NLP: for extra 0.577199281867
+combined score for extra:
+precision: 0.6077057793345009
+recall: 0.5931623931623932
+accuracy: 0.585278276481149
+non-NLP: for gradient 0.598743267504
+combined score for gradient:
+precision: 0.6144975288303131
+recall: 0.6376068376068376
+accuracy: 0.599640933572711
+non-NLP: for linearSVC 0.600538599641
+combined score for linearSVC:
+precision: 0.6051051051051051
+recall: 0.6888888888888889
+accuracy: 0.6005385996409336
+non-NLP: for SVC 0.579892280072
+combined score for SVC:
+precision: 0.6039076376554174
+recall: 0.5811965811965812
+accuracy: 0.5798922800718133
+
+
+### 5 day RSI, CCI, moving_std, OBV, 8-K ###
+## toy_dataset 2 ##
+
+NLP alone:
+precision: 0.551063829787234
+recall: 0.4427350427350427
+accuracy: 0.5179533213644524
+non-NLP: for Ada 0.652603231598
+combined score for Ada:
+precision: 0.6571428571428571
+recall: 0.7076923076923077
+accuracy: 0.6526032315978456
+non-NLP: for Bagging 0.653500897666
+combined score for Bagging:
+precision: 0.6751361161524501
+recall: 0.6358974358974359
+accuracy: 0.6481149012567325
+non-NLP: for extra 0.655296229803
+combined score for extra:
+precision: 0.6850533807829181
+recall: 0.6581196581196581
+accuracy: 0.6615798922800719
+non-NLP: for gradient 0.683123877917
+combined score for gradient:
+precision: 0.7020905923344948
+recall: 0.6888888888888889
+accuracy: 0.6831238779174147
+non-NLP: for linearSVC 0.6921005386
+combined score for linearSVC:
+precision: 0.6914556962025317
+recall: 0.747008547008547
+accuracy: 0.6921005385996409
+non-NLP: for SVC 0.675044883303
+combined score for SVC:
+precision: 0.6784
+recall: 0.7247863247863248
+accuracy: 0.6750448833034112
+
+### 5 day RSI, CCI, moving_std, avg_rate_change, OBV, 8-K ###
+## toy_dataset 2 ##
+
+NLP alone:
+precision: 0.551063829787234
+recall: 0.4427350427350427
+accuracy: 0.5179533213644524
+non-NLP: for Ada 0.67684021544
+combined score for Ada:
+precision: 0.6744186046511628
+recall: 0.7435897435897436
+accuracy: 0.6768402154398564
+non-NLP: for Bagging 0.662477558348
+combined score for Bagging:
+precision: 0.6890909090909091
+recall: 0.6478632478632479
+accuracy: 0.6615798922800719
+non-NLP: for extra 0.680430879713
+combined score for extra:
+precision: 0.6935483870967742
+recall: 0.6615384615384615
+accuracy: 0.6687612208258528
+non-NLP: for gradient 0.688509874327
+combined score for gradient:
+precision: 0.6907051282051282
+recall: 0.7367521367521368
+accuracy: 0.6885098743267505
+non-NLP: for linearSVC 0.687612208259
+combined score for linearSVC:
+precision: 0.6866141732283465
+recall: 0.7452991452991453
+accuracy: 0.6876122082585279
+non-NLP: for SVC 0.698384201077
+combined score for SVC:
+precision: 0.6894977168949772
+recall: 0.7743589743589744
+accuracy: 0.6983842010771992
