@@ -11,7 +11,7 @@ This project aims to explore two questions:
 2) Can this, along with information about recent stock price performance, be used to predict stock price movement?
 
 ## Data
-* More than 48,000 8-K's scraped from sec.gov for all current S&P 500 companies. ([See my gist on how to web scrape sec.gov.](https://gist.github.com/Luke-G-B/bacbdeeb3c5502651fc6e84e5c50edb1)
+* More than 48,000 8-K's scraped from sec.gov for all current S&P 500 companies. ([See my gist on how to web scrape sec.gov.](https://gist.github.com/Luke-G-B/bacbdeeb3c5502651fc6e84e5c50edb1))
   * The filing date on the 8-K's range from 2000 to 2018
 * Stock price data collected from the Alpha Vantage API
   * Daily price info
@@ -23,13 +23,13 @@ This project aims to explore two questions:
 ## Model flow
 ![model diagram](images/model_diagram.png)
 
-**Target**: The target the models are trained on, and what is predicted in the holdout set is the closing price after the 8-K filing is divided by the opening price after the filing. For example, if the 8-K was filed after market close on trading day one, the closing price on trading day two divided by the opening price on trading day two is used as the target.
+**Target**: The target the models are trained on, and what is predicted in the holdout set is the closing price after the 8-K filing, divided by the opening price after the filing. For example, if the 8-K was filed after market close on trading day one, the closing price on trading day two divided by the opening price on trading day two is used as the target.
 
 #### Natural Language Processing (NLP) model
 The corpus of 8-K texts is vectorized into a bag of words. The bag of words is then used as the feature matrix in a Multinomial Naive Bayes model, which classifies each 8-K into either a negative class, predicting the stock price will go down, or a positive class, predicting the stock price will go up.
 
 #### Technical Indicators (TI) model
-Relative Strength Index (5 day), Commodity Channel Index ( 5 day), On Balance Volume, Moving Standard Deviation (5 day), Moving Average of each aforementioned feature (5 day.)
+Relative Strength Index (5 day), Commodity Channel Index ( 5 day), On Balance Volume, Moving Standard Deviation (5 day), Moving Average of each aforementioned feature (5 day.) All features are standardized.
 
 #### NLP + TI
 The NLP classifications is added as a feature along with the TI features and trained and evaluated on the same target.
