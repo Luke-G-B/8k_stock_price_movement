@@ -38,6 +38,50 @@ This project aims to answer two areas of question:
 All data is split into training and holdout sets. The models are trained on the training set and evaluated on the holdout set. All true predictions are important, because both are actionable. Therefore, all models are evaluated on overall accuracy, and estimated rate of return.
 
 #### Information Gain
+
+NLP alone:
+precision: 0.5426621160409556
+recall: 0.49657657657657656
+accuracy: 0.5206121174266084
+
+non-NLP: for Ada 0.732104934416
+combined score for Ada:
+precision: 0.7375794678596657
+recall: 0.7525525525525526
+accuracy: 0.73210493441599
+
+non-NLP: for Bagging 0.726608369769
+combined score for Bagging:
+precision: 0.7517868745938922
+recall: 0.6948948948948949
+accuracy: 0.722048719550281
+
+non-NLP: for extra 0.720924422236
+combined score for extra:
+precision: 0.7486177189147486
+recall: 0.6993393393393393
+accuracy: 0.7215490318550906
+
+non-NLP: for gradient 0.750093691443
+combined score for gradient:
+precision: 0.7586743240009571
+recall: 0.7616816816816817
+accuracy: 0.7500936914428482
+
+non-NLP: for linearSVC 0.67926296065
+combined score for linearSVC:
+precision: 0.681973175721755
+recall: 0.7207207207207207
+accuracy: 0.6800124921923798
+
+non-NLP: for SVC 0.742598376015
+combined score for SVC:
+precision: 0.7485221092456845
+recall: 0.7604804804804804
+accuracy: 0.7425983760149907
+
+AUC:  0.800717743117
+
 Accuracy score, Accuracy by accuracy compliment plot (), AUC, for all three models and random
 Profit curve
 **NLP model**
