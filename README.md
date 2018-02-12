@@ -57,3 +57,6 @@ Taking all ~16,000 predictions from the holdout set and sorting by predicted pro
 Again, sorting all predictions by predicted probability, the below profit curve visualizes the cumulative profit or loss if each trade over the 18 year period was placed. The Technical Indicators + Naive Bayes model has a max profit of nearly 2000% over the 18 year period. This can be compared with the orange line, representing the Naive Bayes model alone, the green line representing randomly going long or short, and the black line representing always going long (and demonstrating the upward bias of the market.)
 
 ![profit curve](images/profit_curve.png)
+
+
+![tech stack](images/tech_stack.png)
